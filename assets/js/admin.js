@@ -85,4 +85,7 @@ function simpanHargaMenu(menuId) {
       container.appendChild(questionItem);
     });
   }
-  
+  function logout(){
+    localStorage.removeItem("isLoggedIn");
+    window.location.href = "login.html";
+  }
